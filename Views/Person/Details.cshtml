@@ -1,0 +1,28 @@
+﻿
+
+@{ ViewData["Title"] = "details"; }
+<h1>Personaldetails</h1>
+<p>
+    Name:@ViewBag.Name
+</p>
+<p>
+    Contact:@ViewBag.Contact
+</p>
+<p>
+    Gender:@ViewBag.Gender
+</p>
+<p>
+    <ul>
+        @foreach (var item in ViewBag.Hobbies)
+        {
+
+@if (item != "false")
+{
+<li>
+    @item
+</li>}}
+    </ul>
+</p>
+<p>
+    Your Option:@ViewBag.Option
+</p>
